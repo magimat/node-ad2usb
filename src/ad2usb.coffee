@@ -163,19 +163,6 @@ class Alarm extends EventEmitter
 
 
   ###
-  Public: Arm the alarm in stay istant mode.
-
-  code: The user code to use to arm the alarm.
-  callback: function invoked when interface acknowledegs command (optional)
-
-  Returns true if command is sent, otherwise false
-  ###
-  armStayInstant: (code, callback) ->
-    @send "#{code}7", callback if code
-
-
-
-  ###
   Public: Arm the alarm in away stay mode.
 
   code: The user code to use to arm the alarm.
@@ -184,7 +171,7 @@ class Alarm extends EventEmitter
   Returns true if command is sent, otherwise false
   ###
   armStay: (code, callback) ->
-    @send "#{code}3", callback if code
+    @send "#{code}7", callback if code
 
 
   ###
