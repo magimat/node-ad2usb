@@ -2,7 +2,7 @@
 log = console.log
 
 task 'build', ->
-  run './node_modules/coffee-script/bin/coffee -o lib -c src'
+  run './node_modules/.bin/coffee -o lib -c src'
 
 task 'test', ->
   run './node_modules/.bin/mocha spec/* --compilers coffee:coffee-script/register --reporter spec --colors'
