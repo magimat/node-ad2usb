@@ -21,10 +21,10 @@
     "prepublish": "cake build"
   },
   "dependencies": {
+    "coffee-script": "^1.8.0",
     "split": "^0.3.0"
   },
   "devDependencies": {
-    "coffee-script": "^1.8.0",
     "mocha": "^1.21.4",
     "chai": "^1.9.1"
   },
